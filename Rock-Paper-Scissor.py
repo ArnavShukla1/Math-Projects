@@ -46,7 +46,7 @@ while is_user_playing == True:
       user_move = "Scissors"
 
     if user_move not in ('Rock', 'Scissors', 'Paper'):
-        print ("I can't understand your answer. Please try again.")
+        print ("I am unable to understand the answer. Please try again.")
 
     else:
       print ("You chose " + user_move)
@@ -54,24 +54,24 @@ while is_user_playing == True:
 
       # stating all the possibilities and their outcomes 
       if comp_rps == user_move:
-        print ("We both chose the same object!")
+        print ("We both chose the same choice!")
 
       elif comp_rps == "Rock":
         if user_move == "Paper":
-          print ("YOU WIN! Your paper has covered my rock!")
+          print ("YOU WIN! Your paper hides my rock!")
           user_score += 1
 
         else: 
-          print ("I WIN! My rock has broken your scissors!")
+          print ("I WIN! My rock breaks your scissors!")
           computer_score += 1
 
       elif comp_rps == "Paper":
         if user_move == "Scissors":
-          print ("YOU WIN! Your scissors has cut my paper!")
+          print ("YOU WIN! Your scissor cuts the paper!")
           user_score += 1
 
         else:
-          print ("I WIN! My paper has covered your rock!")
+          print ("I WIN! My paper hides your rock!")
           computer_score += 1
 
       else:
@@ -83,4 +83,4 @@ while is_user_playing == True:
           print ("I WIN! My scissors has cut your paper!")
           computer_score += 1
 
-# Future Modifications Plan: Game is for limited turns. User can play more if he wants to. Use a for loop instead of while.
+# The game is for limited turns. User can play more if he wants to. Use a for loop instead of while.
